@@ -1,0 +1,24 @@
+-> Simple Function
+
+  object Demo{
+  def add(x : Int , y : Int) : Int ={
+    return x+y;                                 // x+y also works .Last line of function is treated as the return value    
+ 
+  }
+  def main( args : Array[String]){
+  println(add(10,20));
+  }
+  }
+  
+-> Object within an object
+
+  object Demo{
+  object Math{
+  def add(x : Int , y : Int) : Int ={
+    return x+y;                                 // x+y also works .Last line of function is treated as the return value    
+  }
+  }
+  def main( args : Array[String]){
+  println(Math.add(10,20));
+  }
+  }
