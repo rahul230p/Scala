@@ -1,0 +1,71 @@
+-> Boolean , byte , short , int , long ,char , String ,float , double
+Unit - Corresponds to no value
+Null - null or empty reference
+Nothing -subtype of every other type ;
+Any The - supertype of any type
+AnyRef - The supertype of any reference type
+
+ var a: Int = 12   ->Mutable or it's value can be changed
+
+val b: Int = 12   ->Immutable or it's value can't be changed
+
+var c = true   
+
+val x = {val a: Int =10 ; val b : Int b=20; a+b}
+
+->Lazy loading or on demand loading 
+  lazy val c=11  -> Here memory will be assigned on the next operation
+                    on c . If not then memeory will not be assigned .This is lazy initialization.
+                    Value of the variable will only be initialized when it is used
+                    
+                    
+ -> String interpolation
+      val name ="mark"
+      val age = 20
+      println(name + "is " + age + "years old") 
+      
+      1. S string Interpolation
+            println(s"$name is $age years old")
+            Not type safe
+      2. F string Interpolation
+            println(f"$name%s is $age%d years old")
+            Type safe
+      3. Raw Interpolation
+            println(raw"Hello World")
+            
+ -> For loop
+          to , until are methods for range
+    
+      for(i <- 1 to 5){
+      println(i)
+      }
+      for(i <-1.to(5)){
+      println(i)
+      }
+      for(i <-1.until(6)){        //1-5
+      println(i)
+      }
+      for(i <- 1 until 6){
+      println(i)
+      }
+      for(i <- 1 to 5 ; j <-1 to 6){
+      println(i + " " +j)
+      
+      for loop as statement ->
+      val res = for{ i<- lst;if i<6} yield {
+        i*i
+        }
+      
+ -> Scala Match Expressions
+        val age =18;
+        
+        age match {
+        case 20 => println(age);
+        case 30 => println(age);
+        
+        case _ => println("Not found")     //default
+        }
+    
+
+      
+        
